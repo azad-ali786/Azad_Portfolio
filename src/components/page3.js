@@ -24,7 +24,7 @@ const StyledDiv = styled.div`
   width: 100%;
   img {
     position: absolute;
-    right: 12%;
+    right: 13%;
     top: 20%;
   }
 `;

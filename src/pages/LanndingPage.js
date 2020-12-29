@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+import styled from "styled-components";
 import Nav from "../components/Nav";
 import Page1 from "../components/page1";
 import Page2 from "../components/page2";

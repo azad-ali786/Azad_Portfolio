@@ -18,14 +18,6 @@ const Page1 = () => {
     </>
   );
 };
-const Slider = styled(motion.div)`
-  position: absolute;
-  background-color: #030303;
-  height: 100vh;
-  width: 100%;
-  top: 0;
-  left: 0;
-`;
 const StyledDiv = styled.div`
   background-image: url(${img});
   background-repeat: no-repeat;
@@ -59,5 +51,12 @@ const StyledP = styled.h1`
   right: 10%;
   top: 39%;
 `;
-
+const Slider = styled(motion.div)`
+  position: absolute;
+  background-color: #030303;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+`;
 export default Page1;
