@@ -9,7 +9,7 @@ const Page1 = () => {
       <StyledDiv>
         <div>
           <StyledH1>Azad Ali</StyledH1>
-          <StyledH2>UX/UI / Front End Developer</StyledH2>
+          <StyledH2>UI/ UX/ Front End Developer</StyledH2>
         </div>
         <StyledP>Portfolio</StyledP>
       </StyledDiv>

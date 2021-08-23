@@ -10,7 +10,7 @@ import logo from "../images/logo.svg";
 const Nav = ({ check, setCheck }) => {
   return (
     <>
-      <StyledNav>
+      <StyledNav active={check}>
         <img src={logo} alt="logo" />
         <StyledDiv1>
           <img src={linkin} alt="linkedin" />
@@ -18,42 +18,55 @@ const Nav = ({ check, setCheck }) => {
           <img src={tweet} alt="tweet" />
           <img src={insta} alt="insta" />
           <StyledDiv2
-              onClick={() => {
-                setCheck(!check);
-              }}
-            >
-              <Line1
-                animate={check ? { rotate: 45, y: 10 } : { rotate: 0, y: 0 }}
-              ></Line1>
-              <Line2
-                animate={check ? { rotate: 135, y: -10 } : { rotate: 0, y: 0 }}
-              ></Line2>
-            </StyledDiv2>
+            onClick={() => {
+              setCheck(!check);
+            }}
+          >
+            <Line1
+              animate={check ? { rotate: 45, y: 10 } : { rotate: 0, y: 0 }}
+            ></Line1>
+            <Line2
+              animate={check ? { rotate: 135, y: -10 } : { rotate: 0, y: 0 }}
+            ></Line2>
+          </StyledDiv2>
         </StyledDiv1>
+        <NavItem active={check}>
+          <li>Prakriti</li>
+          <li>Leafbeats</li>
+          <li>Gameopedia</li>
+          <li>About</li>
+        </NavItem>
       </StyledNav>
     </>
   );
 };
 const StyledNav = styled.nav`
-  overflow:hidden;
+  overflow: hidden;
   z-index: 1001;
-  width: 90%;
+  transition: 1s;
+  ${({ active }) =>
+    active &&
+    `
+    background: black;
+    height: 100vh !important;
+  `}
+  width: 100%;
   height: 8vh;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 2rem;
+  padding: 2rem 2rem 0rem 2rem;
   justify-content: space-between;
   alight-items: center;
   text-align: center;
   position: sticky;
   top: 0;
   img {
-    cursor:pointer;
+    cursor: pointer;
     margin-left: 13px;
     height: 27px;
     width: 100px;
-    transition:0.2s;
+    transition: 0.2s;
     &:hover {
       transform: scale(1.25);
     }
@@ -69,7 +82,7 @@ const StyledDiv1 = styled.div`
   }
 `;
 const StyledDiv2 = styled.div`
-  position:relative;
+  position: relative;
   z-index: 100;
   display: flex;
   height: 20px;
@@ -92,6 +105,29 @@ const Line2 = styled(motion.div)`
   position: absolute;
   bottom: 0;
 `;
+const NavItem = styled.ul`{
+  z-index:10000;
+  font-weight: light;
+   list-style: none;
+   position:absolute;
+   ${({ active }) =>
+    !active &&
+    `
+    top: 50% !important;
+  `}
+   top:20%;
+   left:40%;
+    li{
+      transition: 0.5s;
+      cursor: pointer;
+      font-size: 8vh;
+      color:white;
+      line-height: 2;
+      &:hover {
+        color:#009dcb;
+      }
+    }
+}`;
 /* 
 
 
