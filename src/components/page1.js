@@ -1,20 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import img from "../images/res.jpg";
-import { motion } from "framer-motion";
+
 const Page1 = () => {
   return (
     <>
+    
       <StyledDiv>
         <div>
           <StyledH1>Azad Ali</StyledH1>
-          <StyledH2>UX/UI Designer</StyledH2>
+          <StyledH2>UX/UI / Front End Developer</StyledH2>
         </div>
         <StyledP>Portfolio</StyledP>
       </StyledDiv>
-      <Slider
-        animate={{ y: -800, transition: { ease: "easeOut", duration: 3 } }}
-      ></Slider>
     </>
   );
 };
@@ -28,7 +26,7 @@ const StyledDiv = styled.div`
   div {
     position: absolute;
     left: 15%;
-    top: 39%;
+    top: 32%;
   }
 `;
 const StyledH1 = styled.h1`
@@ -37,10 +35,10 @@ const StyledH1 = styled.h1`
   color: white;
 `;
 const StyledH2 = styled.h2`
-  font-size: 6vh;
+  font-size: 3.2vh;
   font-weight: 200px;
   color: #dadada;
-  opacity: 0.73;
+  opacity: 0.83;
 `;
 const StyledP = styled.h1`
   font-size: 12vh;
@@ -49,14 +47,9 @@ const StyledP = styled.h1`
   opacity: 0.83;
   position: absolute;
   right: 10%;
-  top: 39%;
+  top: 32%;
 `;
-const Slider = styled(motion.div)`
-  position: absolute;
-  background-color: #030303;
-  height: 100vh;
-  width: 100%;
-  top: 0;
-  left: 0;
-`;
+
+
+
 export default Page1;

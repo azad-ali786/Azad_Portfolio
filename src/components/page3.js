@@ -44,12 +44,17 @@ const Box = styled.div`
     padding-bottom: 4vh;
   }
   button {
+    color:white;
     font-size: 3vh;
-    background: #696969;
-    border: none;
-    padding: 2vh;
-    border-radius: 18px;
+    background: transparent;
+    border: solid white 1px;
+    padding: 1.5vh;
     margin-left: 65px;
+    cursor:pointer;
+    transition:0.5s;
+    &:hover {
+      padding: 1.7vh;
+    }
   }
 `;
 const Line1 = styled.div`
@@ -72,7 +77,7 @@ const Number = styled.h1`
   position: absolute;
   bottom: 0%;
   right: 3%;
-  color: #242424;
+  color: white;
 `;
 
 export default Page3;
