@@ -12,7 +12,7 @@ const Page4 = () => {
           <h3>Game updates webapp.</h3>
           <Line1></Line1>
           <Line2></Line2>
-          <button>Show more!</button>
+          <a href="/Gameopedia"><button>Show more</button></a>
         </Box>
         <Number>03</Number>
       </StyledDiv>

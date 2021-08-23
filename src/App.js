@@ -10,7 +10,6 @@ import Page2 from "./components/page2";
 import Page3 from "./components/page3";
 import Page4 from "./components/page4";
 import Page5 from "./components/page5";
-import Library from "./components/Library";
 import Aboutus from "./pages/AboutUs";
 import { motion } from "framer-motion";
 import styled from "styled-components";

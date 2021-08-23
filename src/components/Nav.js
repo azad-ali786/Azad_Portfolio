@@ -31,10 +31,10 @@ const Nav = ({ check, setCheck }) => {
           </StyledDiv2>
         </StyledDiv1>
         <NavItem active={check}>
-          <li>Prakriti</li>
-          <li>Leafbeats</li>
-          <li>Gameopedia</li>
-          <li>About</li>
+          <li><a href="/Prakriti"> Prakriti </a></li>
+          <li><a href="/Leafbeats"> Leafbeats </a></li>
+          <li><a href="/Gameopedia"> Gameopedia </a></li>
+          <li><a href="/About"> About me </a></li>
         </NavItem>
       </StyledNav>
     </>
@@ -51,7 +51,7 @@ const StyledNav = styled.nav`
     height: 100vh !important;
   `}
   width: 100%;
-  height: 8vh;
+  height: 10vh;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -66,10 +66,6 @@ const StyledNav = styled.nav`
     margin-left: 13px;
     height: 27px;
     width: 100px;
-    transition: 0.2s;
-    &:hover {
-      transform: scale(1.25);
-    }
   }
 `;
 const StyledDiv1 = styled.div`
@@ -77,8 +73,11 @@ const StyledDiv1 = styled.div`
   display: flex;
   justify-content: space-around;
   img {
-    height: 27px;
     width: 27px;
+    transition: 0.2s;
+    &:hover {
+      transform: scale(1.25);
+    }
   }
 `;
 const StyledDiv2 = styled.div`
@@ -113,19 +112,22 @@ const NavItem = styled.ul`{
    ${({ active }) =>
     !active &&
     `
-    top: 50% !important;
+    top: 70% !important;
   `}
    top:20%;
    left:40%;
     li{
-      transition: 0.5s;
+      a{
+        color:white;
+        transition: 0.5s;
       cursor: pointer;
       font-size: 8vh;
-      color:white;
-      line-height: 2;
+      line-height: 1.75;
       &:hover {
         color:#009dcb;
       }
+      }
+      
     }
 }`;
 /* 

@@ -13,7 +13,7 @@ const Page4 = () => {
           <h3>A constant learner.</h3>
           <Line1></Line1>
           <Line2></Line2>
-          <button>Show more</button>
+          <a href="/About"><button>Show more</button></a>
         </Box>
       </StyledDiv>
     </>

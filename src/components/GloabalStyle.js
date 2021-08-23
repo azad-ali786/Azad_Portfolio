@@ -28,6 +28,7 @@ body{
   } 
   a {
 	cursor: pointer;
+    text-decoration: none;
 }
 a:hover {
 	text-decoration: none;

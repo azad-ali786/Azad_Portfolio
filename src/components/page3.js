@@ -11,7 +11,7 @@ const Page3 = () => {
           <h3>Music webapp.</h3>
           <Line1></Line1>
           <Line2></Line2>
-          <button>Show more!</button>
+          <a href="/Leafbeats"><button>Show more</button></a>
         </Box>
         <Number>02</Number>
       </StyledDiv>

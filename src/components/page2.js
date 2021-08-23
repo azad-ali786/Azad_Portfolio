@@ -12,7 +12,7 @@ const Page2 = () => {
           <h3>Recognisation app.</h3>
           <Line1></Line1>
           <Line2></Line2>
-          <button>Show more</button>
+          <a href="/Prakriti"><button>Show more</button></a>
         </Box>
         <Number>01</Number>
       </StyledDiv>
