@@ -30,7 +30,7 @@ const StyledDiv = styled.div`
   }
 `;
 const Box = styled.div`
-  z-index: 1000;
+  z-index: 998;
   position: absolute;
   top: 25%;
   left: 7.5%;

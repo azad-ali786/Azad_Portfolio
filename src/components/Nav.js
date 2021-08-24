@@ -31,10 +31,18 @@ const Nav = ({ check, setCheck }) => {
           </StyledDiv2>
         </StyledDiv1>
         <NavItem active={check}>
-          <li><a href="/Prakriti"> Prakriti </a></li>
-          <li><a href="/Leafbeats"> Leafbeats </a></li>
-          <li><a href="/Gameopedia"> Gameopedia </a></li>
-          <li><a href="/About"> About me </a></li>
+          <li>
+            <a href="/Prakriti"> Prakriti </a>
+          </li>
+          <li>
+            <a href="/Leafbeats"> Leafbeats </a>
+          </li>
+          <li>
+            <a href="/Gameopedia"> Gameopedia </a>
+          </li>
+          <li>
+            <a href="/About"> About me </a>
+          </li>
         </NavItem>
       </StyledNav>
     </>
@@ -42,7 +50,7 @@ const Nav = ({ check, setCheck }) => {
 };
 const StyledNav = styled.nav`
   overflow: hidden;
-  z-index: 1001;
+  z-index: 105;
   transition: 1s;
   ${({ active }) =>
     active &&
@@ -50,6 +58,7 @@ const StyledNav = styled.nav`
     background: black;
     height: 100vh !important;
   `}
+  cursor: auto;
   width: 100%;
   height: 10vh;
   display: flex;
@@ -69,6 +78,7 @@ const StyledNav = styled.nav`
   }
 `;
 const StyledDiv1 = styled.div`
+  height: 10vh;
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -81,8 +91,8 @@ const StyledDiv1 = styled.div`
   }
 `;
 const StyledDiv2 = styled.div`
+  cursor: pointer;
   position: relative;
-  z-index: 100;
   display: flex;
   height: 20px;
   justify-content: space-between;
@@ -104,32 +114,31 @@ const Line2 = styled(motion.div)`
   position: absolute;
   bottom: 0;
 `;
-const NavItem = styled.ul`{
-  z-index:10000;
-  font-weight: light;
-   list-style: none;
-   position:absolute;
-   ${({ active }) =>
-    !active &&
-    `
+const NavItem = styled.ul`
+    font-weight: bolder;
+    list-style: none;
+    position: absolute;
+    ${({ active }) =>
+      !active &&
+      `
     top: 70% !important;
   `}
-   top:20%;
-   left:40%;
-    li{
-      a{
-        color:white;
+    top:20%;
+    left: 40%;
+    li {
+      a {
+        color: white;
         transition: 0.5s;
-      cursor: pointer;
-      font-size: 8vh;
-      line-height: 1.75;
-      &:hover {
-        color:#009dcb;
+        cursor: pointer;
+        font-size: 8vh;
+        line-height: 1.75;
+        &:hover {
+          color: #009dcb;
+        }
       }
-      }
-      
     }
-}`;
+  }
+`;
 /* 
 
 

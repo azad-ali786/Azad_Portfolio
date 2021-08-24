@@ -88,7 +88,7 @@ const StyledDiv = styled.div`
   }
 `;
 const Box = styled.div`
-  z-index: 1000;
+  z-index: 998;
   position: absolute;
   top: 20%;
   left: 10%;

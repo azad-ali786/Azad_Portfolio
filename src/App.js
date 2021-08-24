@@ -10,6 +10,7 @@ import Page2 from "./components/page2";
 import Page3 from "./components/page3";
 import Page4 from "./components/page4";
 import Page5 from "./components/page5";
+import Cursor from "./components/Cursor";
 import Aboutus from "./pages/AboutUs";
 import { motion } from "framer-motion";
 import styled from "styled-components";
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
+      <Cursor/>
       <Slider
         animate={{ y: -800, transition: { ease: "easeOut", duration: 3 } }}
       ></Slider>

@@ -4,13 +4,16 @@ const GlobalStyle = createGlobalStyle`
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+    cursor: none;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body{
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
-    background-color : #040404;
+    background-color : black;
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -32,6 +35,18 @@ body{
 }
 a:hover {
 	text-decoration: none;
+}
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: white;
+  mix-blend-mode: difference;
+  z-index: 999;
+  pointer-events: none;
 }
 `;
 
