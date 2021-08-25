@@ -11,12 +11,11 @@ const Nav = ({ check, setCheck }) => {
   return (
     <>
       <StyledNav active={check}>
-        <img src={logo} alt="logo" style={{zIndex: '997 !important'}}/>
+        <a href="/"><img src={logo} alt="logo" style={{zIndex: '997 !important'}}/></a>
         <StyledDiv1>
-          <img src={linkin} alt="linkedin" />
-          <img src={fb} alt="fb" />
-          <img src={tweet} alt="tweet" />
-          <img src={insta} alt="insta" />
+          <a href=""><img src={linkin} alt="linkedin" /></a>
+          <a href=""><img src={fb} alt="fb" /></a>
+          <a href=""><img src={insta} alt="insta" /></a>
           <StyledDiv2
             onClick={() => {
               setCheck(!check);

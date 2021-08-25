@@ -1,7 +1,8 @@
 import React from "react";
 import img from "../images/p1.png";
 import styled from "styled-components";
-
+import flutter from "../images/flutter.svg";
+import firebase from "../images/firebase.svg";
 const Project1 = () => {
   return (
     <>
@@ -12,14 +13,14 @@ const Project1 = () => {
           <h3>Recognisation app.</h3>
           <Line1></Line1>
           <Line2></Line2>
-          <button>Install</button>
+          <a href="https://github.com/azad-ali786/PRAKRITI.git"><button>Code</button></a>
         </Box>
       </StyledDiv>
       <StyledSection>
           <StyledDescription>
               <FlexDiv>
               <Pointer></Pointer>
-              <h1>Description</h1>
+              <h1><span>01</span>&nbsp; &nbsp; Description</h1>
               </FlexDiv>
               <h3>
                 This project was build for NASA Space App Hackathon in 2
@@ -42,24 +43,67 @@ const Project1 = () => {
           </StyledDescription>
 
           <StyledTech>
-            <h1>Tech Utilized</h1>
-            <div></div>
-            <div></div>
-          </StyledTech>
+          <FlexDiv>
+              <Pointer></Pointer>
+              <h1><span>02</span>&nbsp; &nbsp;Tech Utilized</h1>
+              </FlexDiv>
+              <TechLogoStyle>
+              <img src={flutter} alt="Flutter" />
+              <img src="https://1.bp.blogspot.com/-B3K1G5D9sPQ/WvDZJGvkqVI/AAAAAAAAFSc/zx6VYIc0IXQmB8oR4c0i7SKjSNL-2xiTQCLcBGAs/s1600/ml-kit-logo.png" alt="ML Kit" />
+              <img src={firebase} alt="Firebase" />
+              </TechLogoStyle>
+         </StyledTech>
+         <StyledAchievements>
+         <FlexDiv>
+              <Pointer></Pointer>
+              <h1><span>03</span>&nbsp; &nbsp;Achievements</h1>
+              </FlexDiv>
+              <h3>
+               Ranked under top 1000 teams from 18,000 teams competing with no age barrier but on skills and experience.</h3>
+             
+         </StyledAchievements>
       </StyledSection>
     </>
   );
 };
 const StyledDescription = styled.div`
   height: 40vh;
+  h3{
+    font-weight: normal;
+    padding: 0 40px;
+    text-align: justify;
+    line-height: 1.75;
+  }
 `;
 const FlexDiv = styled.div`
   display:flex;
+  h1{
+    font-weight: normal;
+    font-size: 2vw;
+    span{
+      color:#FF4D5A;
+    }
+  }
 `;
 const StyledTech = styled.div`
-  height: 50vh;
+  height: 20vh;
 `;
-
+const TechLogoStyle = styled.div`
+   img{
+     margin-left: 40px;
+     height: 50px;
+   }
+`;
+const StyledAchievements = styled.div`
+  height: 30vh;
+  padding-top: 5vh;
+  h3{
+    font-weight: normal;
+    padding: 0 40px;
+    text-align: justify;
+    line-height: 1.75;
+  }
+`;
 const StyledSection = styled.section`
   height: 100vh;
   width: 100%;
@@ -68,11 +112,11 @@ const StyledSection = styled.section`
 `;
 const Pointer = styled.div`
   margin-bottom: 50px;
-  height: 5px !important;
+  height: 3px !important;
   margin-right: 10px;
-  margin-top: 10px;
+  margin-top: 14px;
   width: 2vw;
-  background-color: #F592D9;
+  background-color: black;
 `;
 
 const StyledDiv = styled.div`
