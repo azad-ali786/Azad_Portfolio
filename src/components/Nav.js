@@ -11,7 +11,7 @@ const Nav = ({ check, setCheck }) => {
   return (
     <>
       <StyledNav active={check}>
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" style={{zIndex: '997 !important'}}/>
         <StyledDiv1>
           <img src={linkin} alt="linkedin" />
           <img src={fb} alt="fb" />
@@ -23,10 +23,10 @@ const Nav = ({ check, setCheck }) => {
             }}
           >
             <Line1
-              animate={check ? { rotate: 45, y: 10 } : { rotate: 0, y: 0 }}
+              animate={check ? { rotate: -45, y: 10,x: -10 } : { rotate: 0, y: 0 }}
             ></Line1>
             <Line2
-              animate={check ? { rotate: 135, y: -10 } : { rotate: 0, y: 0 }}
+              animate={check ? { rotate: -135, y: -6, x: -10 } : { rotate: 0, y: 0 }}
             ></Line2>
           </StyledDiv2>
         </StyledDiv1>

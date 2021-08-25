@@ -21,7 +21,7 @@ function App() {
       <GlobalStyle />
       <Cursor/>
       <Slider
-        animate={{ y: -800, transition: { ease: "easeOut", duration: 3 } }}
+        animate={{ y: -800, transition: { ease: "easeOut", duration: 1.75 } }}
       ></Slider>
       <Nav check={check} setCheck={setCheck} />
       <Switch>
@@ -56,6 +56,7 @@ place-items: center;
 position: fixed;
 top: 0;
 left: 0;
+z-index:997;
 background: black;
 `;
 

@@ -24,7 +24,7 @@ const StyledDiv = styled.div`
   height: 92vh;
   width: 100%;
   div {
-    z-index: 998;
+    z-index: 997;
     position: absolute;
     left: 15%;
     top: 32%;

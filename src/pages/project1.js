@@ -16,11 +16,11 @@ const Project1 = () => {
         </Box>
       </StyledDiv>
       <StyledSection>
-        <div>
           <StyledDescription>
-            <div>
+              <FlexDiv>
               <Pointer></Pointer>
               <h1>Description</h1>
+              </FlexDiv>
               <h3>
                 This project was build for NASA Space App Hackathon in 2
                 days,Every small thing we do has an impact directly on the
@@ -36,7 +36,7 @@ const Project1 = () => {
                 it does serve it's basic purpose and shall be able to spread
                 awareness
               </h3>
-            </div>
+            
             <img src="" alt="" />
             <img src="" alt="" />
           </StyledDescription>
@@ -46,16 +46,15 @@ const Project1 = () => {
             <div></div>
             <div></div>
           </StyledTech>
-        </div>
       </StyledSection>
     </>
   );
 };
 const StyledDescription = styled.div`
   height: 40vh;
-  div {
-    display: flex;
-  }
+`;
+const FlexDiv = styled.div`
+  display:flex;
 `;
 const StyledTech = styled.div`
   height: 50vh;
@@ -64,16 +63,16 @@ const StyledTech = styled.div`
 const StyledSection = styled.section`
   height: 100vh;
   width: 100%;
-  background-color: #ffffff;
-  div {
-    padding-top: 5vh;
-  }
+  background-color: #EBE8E7;
+  padding-top: 10vh;
 `;
 const Pointer = styled.div`
   margin-bottom: 50px;
-  height: 2px;
-  width: 4vw;
-  background-color: black;
+  height: 5px !important;
+  margin-right: 10px;
+  margin-top: 10px;
+  width: 2vw;
+  background-color: #F592D9;
 `;
 
 const StyledDiv = styled.div`
@@ -103,13 +102,17 @@ const Box = styled.div`
     padding-bottom: 2vw;
   }
   button {
-    font-size: 2vw;
-    background: #1d94db;
-    border: none;
+    font-size: 1.56vw;
+    background: transparent;
+    border: solid 1px white;
     color: white;
     padding: 1vh 3vh 1vh 3vh;
-    border-radius: 13px;
     margin-left: 4.5vw;
+    transition: 0.25s;
+    cursor:pointer;
+    &:hover{
+       transform: scale(1.05);
+    }
   }
 `;
 const Line1 = styled.div`
