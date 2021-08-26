@@ -1,18 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import img from "../images/pic1.png";
+import img from "../images/vaccine.jpg";
 const Page2 = () => {
   return (
     <>
       <StyledDiv>
         <img src={img} alt="" />
         <Box>
-          <h1>Prakriti</h1>
-          <h3>Recognisation app.</h3>
+          <h1>CovInfo</h1>
+          <h3>Easing vaccination verification.</h3>
           <Line1></Line1>
           <Line2></Line2>
-          <a href="/Prakriti"><button>Show more</button></a>
+          <a href="/CovInfo"><button>Show more</button></a>
         </Box>
         <Number>01</Number>
       </StyledDiv>
@@ -24,6 +24,9 @@ const StyledDiv = styled.div`
   height: 100vh;
   width: 100%;
   img {
+    height: 65vh;
+    width:50vw;
+    border-radius: 16px;
     position: absolute;
     right: 12%;
     top: 20%;

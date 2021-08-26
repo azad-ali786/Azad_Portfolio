@@ -32,13 +32,13 @@ function App() {
           <Page4 />
           <Page5 />
         </Route>
-        <Route path="/Prakriti" exact>
+        <Route path="/CovInfo" exact>
           <Project1 />
         </Route>
-        <Route path="/Leafbeats" exact>
+        <Route path="/Prakriti" exact>
           <Project2 />
         </Route>
-        <Route path="/Gameopedia" exact>
+        <Route path="/SortingVisualizer" exact>
           <Project3 />
         </Route>
         <Route path="/AboutUs" exact>

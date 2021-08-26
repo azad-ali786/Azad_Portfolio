@@ -1,17 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import img from "../images/pic2.png";
+import { motion } from "framer-motion";
+import img from "../images/pic1.png";
 const Page3 = () => {
   return (
     <>
       <StyledDiv>
-        <img src={img} alt="" />
+      <img src={img} alt="" />
         <Box>
-          <h1>Leafbeats</h1>
-          <h3>Music webapp.</h3>
+          <h1>Prakriti</h1>
+          <h3>Recognisation app.</h3>
           <Line1></Line1>
           <Line2></Line2>
-          <a href="/Leafbeats"><button>Show more</button></a>
+          <a href="/Prakriti"><button>Show more</button></a>
         </Box>
         <Number>02</Number>
       </StyledDiv>
@@ -23,8 +24,11 @@ const StyledDiv = styled.div`
   height: 100vh;
   width: 100%;
   img {
+    height: 65vh;
+    width:50vw;
+    border-radius: 16px;
     position: absolute;
-    right: 13%;
+    right: 12%;
     top: 20%;
   }
 `;

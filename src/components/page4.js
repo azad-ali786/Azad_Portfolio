@@ -1,18 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import img from "../images/pic3.png";
+import img from "../images/sorting.jpg";
 const Page4 = () => {
   return (
     <>
       <StyledDiv>
         <img src={img} alt="" />
         <Box>
-          <h1>Gameopedia</h1>
-          <h3>Game updates webapp.</h3>
+          <h1>Sorting Visualizer</h1>
+          <h3>Visualise sorting algorithms</h3>
           <Line1></Line1>
           <Line2></Line2>
-          <a href="/Gameopedia"><button>Show more</button></a>
+          <a href="/SortingVisualizer"><button>Show more</button></a>
         </Box>
         <Number>03</Number>
       </StyledDiv>
@@ -24,6 +24,9 @@ const StyledDiv = styled.div`
   height: 100vh;
   width: 100%;
   img {
+    height: 65vh;
+    width:50vw;
+    border-radius: 16px;
     position: absolute;
     right: 12%;
     top: 20%;
