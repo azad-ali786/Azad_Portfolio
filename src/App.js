@@ -4,12 +4,14 @@ import GlobalStyle from "./components/GloabalStyle";
 import Project1 from "./pages/project1";
 import Project2 from "./pages/project2";
 import Project3 from "./pages/project3";
+import Project4 from "./pages/project4";
 import Nav from "./components/Nav";
 import Page1 from "./components/page1";
 import Page2 from "./components/page2";
 import Page3 from "./components/page3";
 import Page4 from "./components/page4";
 import Page5 from "./components/page5";
+import Page6 from "./components/page6";
 import Cursor from "./components/Cursor";
 import Aboutus from "./pages/AboutUs";
 import { motion } from "framer-motion";
@@ -31,6 +33,7 @@ function App() {
           <Page3 />
           <Page4 />
           <Page5 />
+          <Page6/>
         </Route>
         <Route path="/CovInfo" exact>
           <Project1 />
@@ -40,6 +43,9 @@ function App() {
         </Route>
         <Route path="/SortingVisualizer" exact>
           <Project3 />
+        </Route>
+        <Route path="/CSS" exact>
+          <Project4 />
         </Route>
         <Route path="/AboutUs" exact>
           <Aboutus />

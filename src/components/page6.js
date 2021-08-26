@@ -1,20 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import img from "../images/cssweb.jpg";
-const Page5 = () => {
+import img from "../images/pic4.png";
+const Page6 = () => {
   return (
     <>
       <StyledDiv>
         <img src={img} alt="" />
         <Box>
-          <h1>CS Society</h1>
-          <h3>Official Website of CSE,NITS</h3>
+        <h1>About me</h1>
+          <h3>I love to Design and develop.</h3>
           <Line1></Line1>
           <Line2></Line2>
-          <a href="/CSS"><button>Show more</button></a>
+          <a href="/About"><button>Show more</button></a>
         </Box>
-        <Number>04</Number>
       </StyledDiv>
     </>
   );
@@ -84,4 +83,4 @@ const Number = styled.h1`
   color: white;
 `;
 
-export default Page5;
+export default Page6;
