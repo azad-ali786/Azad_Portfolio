@@ -32,13 +32,10 @@ const Project3 = () => {
             </h1>
           </FlexDiv>
           <h3>
-          This project was build for Srijan Technerd, NITS Hackathon in 2 days.
-          Verification process are quite time consuming and energy draining.
-          To ease the verification and track process of students for institutions and organizations.
-           To provide a platform simple still efficient implementation for colleges and institutions to
-            track exact number of students in an institution. The verified
-            status in the students portal can be used in time of re-entering the
-            college.
+          Welcome to Sorting Visualizer!
+           I built this application because I was fascinated by sorting algorithms, and I wanted to visualize them in action.
+           This project sorting visualizer is a very simple UI and it allows the users to select the sort algorithm, select the array size, and speed of the visualization.
+           I hope that you enjoy playing around with this visualization tool just as much as I enjoyed building it.
           </h3>
         </StyledDescription>
 

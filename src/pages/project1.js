@@ -3,6 +3,7 @@ import img from "../images/vaccine.jpg";
 import styled from "styled-components";
 import html from "../images/html.svg";
 import css from "../images/css.svg";
+import bs from "../images/bs.svg";
 import js from "../images/js.svg";
 import express from "../images/express.svg";
 import mongo from "../images/mongodb.svg";
@@ -55,6 +56,7 @@ const Project1 = () => {
               src={css}
               alt="CSS"
             />
+            <img src={bs} alt="BS" />
             <img src={js} alt="JS" />
             <img src={node} alt="Node" />
             <img src={express} alt="Express" />
