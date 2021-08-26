@@ -1,13 +1,11 @@
 import React from "react";
-import img from "../images/vaccine.jpg";
+import img from "../images/sorting.jpg";
 import styled from "styled-components";
 import html from "../images/html.svg";
 import css from "../images/css.svg";
 import js from "../images/js.svg";
-import express from "../images/express.svg";
-import mongo from "../images/mongodb.svg";
-import git from "../images/git.svg";
-import node from "../images/node.svg";
+import bs from "../images/bs.svg";
+
 const Project3 = () => {
   return (
     <>
@@ -52,25 +50,11 @@ const Project3 = () => {
               src={css}
               alt="CSS"
             />
+            <img src={bs} alt="BS" />
             <img src={js} alt="JS" />
-            <img src={node} alt="Node" />
-            <img src={express} alt="Express" />
-            <img src={mongo} alt="MONGO" />
-            <img src="https://jwt.io/img/pic_logo.svg" alt="jwt" />
-            <img src={git} alt="Github" />
+          
           </TechLogoStyle>
         </StyledTech>
-        <StyledAchievements>
-          <FlexDiv>
-            <Pointer></Pointer>
-            <h1>
-              <span>03</span>&nbsp; &nbsp;Achievements
-            </h1>
-          </FlexDiv>
-          <h3>
-            Winners of Srijan Technerd, NITS Hackathon.
-          </h3>
-        </StyledAchievements>
       </StyledSection>
     </>
   );

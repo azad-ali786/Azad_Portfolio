@@ -31,13 +31,13 @@ const Nav = ({ check, setCheck }) => {
         </StyledDiv1>
         <NavItem active={check}>
           <li>
+            <a href="/CovInfo"> CovInfo </a>
+          </li>
+          <li>
             <a href="/Prakriti"> Prakriti </a>
           </li>
           <li>
-            <a href="/Leafbeats"> Leafbeats </a>
-          </li>
-          <li>
-            <a href="/Gameopedia"> Gameopedia </a>
+            <a href="/SortingVisualizer"> Sorting Visualizer </a>
           </li>
           <li>
             <a href="/About"> About me </a>
@@ -123,7 +123,7 @@ const NavItem = styled.ul`
     top: 70% !important;
   `}
     top:20%;
-    left: 40%;
+    left: 30%;
     li {
       a {
         color: white;

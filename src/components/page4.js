@@ -8,7 +8,7 @@ const Page4 = () => {
       <StyledDiv>
         <img src={img} alt="" />
         <Box>
-          <h1>Sorting Visualizer</h1>
+          <h1>Sorting Vis.</h1>
           <h3>Visualise sorting algorithms</h3>
           <Line1></Line1>
           <Line2></Line2>
