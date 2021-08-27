@@ -5,7 +5,6 @@ import img from "../images/res.jpg";
 const Page1 = () => {
   return (
     <>
-    
       <StyledDiv>
         <div>
           <StyledH1>Azad Ali</StyledH1>
@@ -44,13 +43,11 @@ const StyledH2 = styled.h2`
 const StyledP = styled.h1`
   font-size: 12vh;
   font-weight: 500;
-  color: #C010BC;
+  color: #c010bc;
   opacity: 0.83;
   position: absolute;
   right: 10%;
   top: 32%;
 `;
-
-
 
 export default Page1;
