@@ -12,7 +12,7 @@ const Project3 = () => {
       <StyledDiv>
         <img src={img} alt="" />
         <Box>
-          <h1>Sorting Visualizer</h1>
+          <h1>Sorting Vis.</h1>
           <h3>Visualise sorting algorithms.</h3>
           <Line1></Line1>
           <Line2></Line2>
@@ -63,7 +63,7 @@ const StyledDescription = styled.div`
   height: 30vh;
   h3 {
     color: #828c96;
-    font-weight: lighter;
+    font-weight: 100;
     padding: 0 40px;
     text-align: justify;
     line-height: 1.75;
@@ -72,7 +72,7 @@ const StyledDescription = styled.div`
 const FlexDiv = styled.div`
   display: flex;
   h1 {
-    font-weight: normal;
+    font-weight: bold;
     font-size: 2vw;
     span {
       color: #ff4d5a;
@@ -86,17 +86,6 @@ const TechLogoStyle = styled.div`
   img {
     margin-left: 40px;
     height: 50px;
-  }
-`;
-const StyledAchievements = styled.div`
-  height: 30vh;
-  padding-top: 5vh;
-  h3 {
-    color: #828c96;
-    font-weight: 400;
-    padding: 0 40px;
-    text-align: justify;
-    line-height: 1.75;
   }
 `;
 const StyledSection = styled.section`
@@ -133,11 +122,13 @@ const Box = styled.div`
   top: 20%;
   left: 10%;
   h1 {
+    font-weight: 600;
     font-size: 10vw;
     color: #e1dede;
     opacity: 73%;
   }
   h3 {
+    font-weight: 200;
     font-size: 2.5vw;
     color: #9e9b9b;
     padding-bottom: 2vw;

@@ -37,11 +37,13 @@ const Box = styled.div`
   top: 30%;
   left: 16%;
   h1 {
+    font-weight:600;
     font-size: 20vh;
     color: #e1dede;
     opacity: 73%;
   }
   h3 {
+    font-weight:200;
     font-size: 5vh;
     color: #9e9b9b;
     padding-bottom: 4vh;
@@ -74,13 +76,6 @@ const Line2 = styled.div`
   border-radius: 10px;
   margin-bottom: 4vh;
   margin-left: 150px;
-`;
-const Number = styled.h1`
-  font-size: 30vh;
-  position: absolute;
-  bottom: 0%;
-  right: 3%;
-  color: white;
 `;
 
 export default Page6;

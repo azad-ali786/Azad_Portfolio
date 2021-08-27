@@ -64,22 +64,22 @@ const Project2 = () => {
   );
 };
 const StyledDescription = styled.div`
-  height: 40vh;
-  h3{
-    color:#828C96;
-    font-weight: lighter;
+  height: 37vh;
+  h3 {
+    color: #828c96;
+    font-weight: 100;
     padding: 0 40px;
     text-align: justify;
     line-height: 1.75;
   }
 `;
 const FlexDiv = styled.div`
-  display:flex;
-  h1{
-    font-weight: normal;
+  display: flex;
+  h1 {
+    font-weight: bold;
     font-size: 2vw;
-    span{
-      color:#FF4D5A;
+    span {
+      color: #ff4d5a;
     }
   }
 `;
@@ -87,17 +87,17 @@ const StyledTech = styled.div`
   height: 20vh;
 `;
 const TechLogoStyle = styled.div`
-   img{
-     margin-left: 40px;
-     height: 50px;
-   }
+  img {
+    margin-left: 40px;
+    height: 50px;
+  }
 `;
 const StyledAchievements = styled.div`
   height: 30vh;
   padding-top: 5vh;
-  h3{
-    color:#828C96;
-    font-weight: 400;
+  h3 {
+    color: #828c96;
+    font-weight: 100;
     padding: 0 40px;
     text-align: justify;
     line-height: 1.75;
@@ -106,7 +106,7 @@ const StyledAchievements = styled.div`
 const StyledSection = styled.section`
   height: 100vh;
   width: 100%;
-  background-color: #EBE8E7;
+  background-color: #ebe8e7;
   padding-top: 10vh;
 `;
 const Pointer = styled.div`
@@ -140,11 +140,13 @@ const Box = styled.div`
     font-size: 10vw;
     color: #e1dede;
     opacity: 73%;
+    font-weight:600;
   }
   h3 {
     font-size: 2.5vw;
     color: #9e9b9b;
     padding-bottom: 2vw;
+    font-weight:200;
   }
   button {
     font-size: 1.56vw;
@@ -154,9 +156,9 @@ const Box = styled.div`
     padding: 1vh 3vh 1vh 3vh;
     margin-left: 4.5vw;
     transition: 0.25s;
-    cursor:pointer;
-    &:hover{
-       transform: scale(1.05);
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.05);
     }
   }
 `;
@@ -175,5 +177,4 @@ const Line2 = styled.div`
   margin-bottom: 2vw;
   margin-left: 10vw;
 `;
-
 export default Project2;

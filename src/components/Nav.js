@@ -30,18 +30,18 @@ const Nav = ({ check, setCheck }) => {
           </StyledDiv2>
         </StyledDiv1>
         <NavItem active={check}>
-          <li>
-            <a href="/CovInfo"> CovInfo </a>
-          </li>
-          <li>
-            <a href="/Prakriti"> Prakriti </a>
-          </li>
-          <li>
-            <a href="/SortingVisualizer"> Sorting Visualizer </a>
-          </li>
-          <li>
-            <a href="/About"> About me </a>
-          </li>
+        <a href="/CovInfo"> <li>
+            <div></div> CovInfo
+          </li> </a>
+          <a href="/Prakriti"><li>
+          <div></div> Prakriti
+          </li></a>
+          <a href="/SortingVisualizer"><li>
+          <div></div> Sorting Visualizer
+          </li> </a>
+          <a href="/About"><li>
+          <div></div> About me 
+          </li></a>
         </NavItem>
       </StyledNav>
     </>
@@ -124,16 +124,29 @@ const NavItem = styled.ul`
   `}
     top:20%;
     left: 30%;
+    a {
+      color: white;
+      transition: 0.5s;
+      cursor: pointer;
+      font-size: 8vh;
+      line-height: 1.75;
+    }
     li {
-      a {
-        color: white;
+      position:relative;
+      div{
+        
+        position:absolute;
+        top: 50%;
         transition: 0.5s;
-        cursor: pointer;
-        font-size: 8vh;
-        line-height: 1.75;
-        &:hover {
-          color: #009dcb;
+        background-color: #ff4d5a;
+        height:6px;
+        width:0%;
+      }
+      &:hover {
+        div{
+          width: 100%;
         }
+          color: #009dcb;
       }
     }
   }

@@ -84,7 +84,7 @@ const StyledDescription = styled.div`
   height: 30vh;
   h3 {
     color: #828c96;
-    font-weight: lighter;
+    font-weight: 100;
     padding: 0 40px;
     text-align: justify;
     line-height: 1.75;
@@ -93,7 +93,7 @@ const StyledDescription = styled.div`
 const FlexDiv = styled.div`
   display: flex;
   h1 {
-    font-weight: normal;
+    font-weight: bold;
     font-size: 2vw;
     span {
       color: #ff4d5a;
@@ -114,7 +114,7 @@ const StyledAchievements = styled.div`
   padding-top: 5vh;
   h3 {
     color: #828c96;
-    font-weight: 400;
+    font-weight: 100;
     padding: 0 40px;
     text-align: justify;
     line-height: 1.75;
@@ -157,11 +157,13 @@ const Box = styled.div`
     font-size: 10vw;
     color: #e1dede;
     opacity: 73%;
+    font-weight:600;
   }
   h3 {
     font-size: 2.5vw;
     color: #9e9b9b;
     padding-bottom: 2vw;
+    font-weight:200;
   }
   button {
     font-size: 1.56vw;

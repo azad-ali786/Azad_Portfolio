@@ -38,11 +38,13 @@ const Box = styled.div`
   top: 30%;
   left: 16%;
   h1 {
+    font-weight:600;
     font-size: 20vh;
     color: #e1dede;
     opacity: 73%;
   }
   h3 {
+    font-weight:200;
     font-size: 5vh;
     color: #9e9b9b;
     padding-bottom: 4vh;
@@ -77,6 +79,7 @@ const Line2 = styled.div`
   margin-left: 150px;
 `;
 const Number = styled.h1`
+  font-weight:500;
   font-size: 30vh;
   position: absolute;
   bottom: 0%;

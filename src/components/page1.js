@@ -37,14 +37,14 @@ const StyledH1 = styled.h1`
 `;
 const StyledH2 = styled.h2`
   font-size: 3.2vh;
-  font-weight: 200px;
-  color: #dadada;
+  font-weight: 100;
+  color: white;
   opacity: 0.83;
 `;
 const StyledP = styled.h1`
   font-size: 12vh;
-  font-weight: 200px;
-  color: #dadada;
+  font-weight: 500;
+  color: #C010BC;
   opacity: 0.83;
   position: absolute;
   right: 10%;
