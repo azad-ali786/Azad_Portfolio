@@ -1,4 +1,6 @@
 import React from "react";
+import { motion} from "framer-motion";
+import {scaleFade} from "../animation";
 import img from "../images/sorting.jpg";
 import styled from "styled-components";
 import html from "../images/html.svg";
@@ -10,7 +12,11 @@ const Project3 = () => {
   return (
     <>
       <StyledDiv>
-        <img src={img} alt="" />
+        <motion.img src={img} alt=""
+        variants={scaleFade}
+        initial="hidden"
+        animate="show"
+        />
         <Box>
           <h1>Sorting Vis.</h1>
           <h3>Visualise sorting algorithms.</h3>

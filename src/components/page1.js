@@ -43,7 +43,7 @@ const StyledH2 = styled.h2`
 const StyledP = styled.h1`
   font-size: 12vh;
   font-weight: 500;
-  color: #c010bc;
+  color: white;
   opacity: 0.83;
   position: absolute;
   right: 10%;

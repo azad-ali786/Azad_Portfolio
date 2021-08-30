@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { motion } from "framer-motion";
 import img from "../images/vaccine.jpg";
 const Page2 = () => {
   return (
@@ -12,7 +11,9 @@ const Page2 = () => {
           <h3>Easing vaccination verification.</h3>
           <Line1></Line1>
           <Line2></Line2>
-          <a href="/CovInfo"><button>Show more</button></a>
+          <a href="/CovInfo">
+            <button>Show more</button>
+          </a>
         </Box>
         <Number>01</Number>
       </StyledDiv>
@@ -25,7 +26,7 @@ const StyledDiv = styled.div`
   width: 100%;
   img {
     height: 65vh;
-    width:50vw;
+    width: 50vw;
     border-radius: 16px;
     position: absolute;
     right: 12%;
@@ -38,26 +39,26 @@ const Box = styled.div`
   top: 30%;
   left: 16%;
   h1 {
-    font-weight:600;
+    font-weight: 600;
     font-size: 20vh;
     color: #e1dede;
     opacity: 73%;
   }
   h3 {
-    font-weight:200;
+    font-weight: 200;
     font-size: 5vh;
     color: #9e9b9b;
     padding-bottom: 4vh;
   }
   button {
-    color:white;
+    color: white;
     font-size: 3vh;
     background: transparent;
     border: solid white 1px;
     padding: 1.5vh;
     margin-left: 65px;
-    cursor:pointer;
-    transition:0.5s;
+    cursor: pointer;
+    transition: 0.5s;
     &:hover {
       padding: 1.7vh;
     }
@@ -79,7 +80,7 @@ const Line2 = styled.div`
   margin-left: 150px;
 `;
 const Number = styled.h1`
-  font-weight:500;
+  font-weight: 500;
   font-size: 30vh;
   position: absolute;
   bottom: 0%;

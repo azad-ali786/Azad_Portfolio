@@ -1,4 +1,6 @@
 import React from "react";
+import {motion} from "framer-motion";
+import { scaleFade } from "../animation";
 import img from "../images/vaccine.jpg";
 import styled from "styled-components";
 import html from "../images/html.svg";
@@ -13,7 +15,11 @@ const Project1 = () => {
   return (
     <>
       <StyledDiv>
-        <img src={img} alt="" />
+        <motion.img src={img} alt="Vaccine" 
+        variants={scaleFade}
+        initial="hidden"
+        animate="show"
+        />
         <Box>
           <h1>CovInfo</h1>
           <h3>Easing vaccination verification.</h3>

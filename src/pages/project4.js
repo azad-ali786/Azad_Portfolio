@@ -1,4 +1,6 @@
 import React from "react";
+import {motion} from "framer-motion";
+import {scaleFade} from "../animation";
 import img from "../images/cssweb.jpg";
 import styled from "styled-components";
 import html from "../images/html.svg";
@@ -10,7 +12,11 @@ const Project4 = () => {
   return (
     <>
       <StyledDiv>
-        <img src={img} alt="" />
+        <motion.img src={img} alt=""
+        variants={scaleFade}
+        initial="hidden"
+        animate="show"
+        />
         <Box>
           <h1>CS Society</h1> 
           <h3>Official Website of CSE,NITS</h3>

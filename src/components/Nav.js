@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import linkin from "../images/linkedin.svg";
-import insta from "../images/insta.svg";
+import linkedin from "../images/linkedin.svg";
+import git from "../images/github.svg";
 import fb from "../images/fb.svg";
-import tweet from "../images/tweet.png";
 import logo from "../images/logo.svg";
 
 const Nav = ({ check, setCheck }) => {
@@ -13,9 +12,9 @@ const Nav = ({ check, setCheck }) => {
       <StyledNav active={check}>
         <a href="/"><img src={logo} alt="logo" style={{zIndex: '997 !important'}}/></a>
         <StyledDiv1>
-          <a href=""><img src={linkin} alt="linkedin" /></a>
-          <a href=""><img src={fb} alt="fb" /></a>
-          <a href=""><img src={insta} alt="insta" /></a>
+          <a href="https://www.linkedin.com/in/azad-ali-49274a1a0/"><img src={linkedin} alt="linkedin" /></a>
+          <a href="https://www.facebook.com/will.jake.31"><img src={fb} alt="fb" /></a>
+          <a href="https://github.com/azad-ali786"><img src={git} alt="git" /></a>
           <StyledDiv2
             onClick={() => {
               setCheck(!check);

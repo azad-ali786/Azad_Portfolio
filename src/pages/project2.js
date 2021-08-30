@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+import {scaleFade} from "../animation"
 import img from "../images/p1.png";
 import styled from "styled-components";
 import flutter from "../images/flutter.svg";
@@ -7,7 +9,11 @@ const Project2 = () => {
   return (
     <>
       <StyledDiv>
-        <img src={img} alt="" />
+        <motion.img src={img} alt=""
+        variants={scaleFade}
+        initial="hidden"
+        animate="show"
+        />
         <Box>
           <h1>Prakriti</h1>
           <h3>Recognisation app.</h3>
