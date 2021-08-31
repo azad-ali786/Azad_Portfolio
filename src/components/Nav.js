@@ -38,6 +38,9 @@ const Nav = ({ check, setCheck }) => {
           <a href="/SortingVisualizer"><li>
           <div></div> Sorting Visualizer
           </li> </a>
+          <a href="/CSS"><li>
+          <div></div> CS Society
+          </li> </a>
           <a href="/About"><li>
           <div></div> About me 
           </li></a>
@@ -132,8 +135,8 @@ const NavItem = styled.ul`
     }
     li {
       position:relative;
+      
       div{
-        
         position:absolute;
         top: 50%;
         transition: 0.5s;

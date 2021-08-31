@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
 }
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 body{
   font-family: 'Montserrat', sans-serif;

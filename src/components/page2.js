@@ -1,26 +1,42 @@
 import React from "react";
 import styled from "styled-components";
 import img from "../images/vaccine.jpg";
+import { motion } from "framer-motion";
+import { useScroll } from "./useScroll";
+import { fade, titleAnim, lineAnim } from "../animation";
 const Page2 = () => {
+  const [element, controls] = useScroll();
   return (
     <>
       <StyledDiv>
-        <img src={img} alt="" />
-        <Box>
-          <h1>CovInfo</h1>
-          <h3>Easing vaccination verification.</h3>
-          <Line1></Line1>
-          <Line2></Line2>
+        <img src={img} alt="vaccine" />
+        <Box variants={fade} ref={element} animate={controls} initial="hidden">
+          <Hide>
+            <motion.h1 variants={titleAnim}>CovInfo.</motion.h1>
+          </Hide>
+          <Hide>
+            <motion.h3 variants={titleAnim}>
+              Easing vaccination verification.
+            </motion.h3>
+          </Hide>
+          <Line1 variants={lineAnim}></Line1>
+          <Line2 variants={lineAnim}></Line2>
           <a href="/CovInfo">
-            <button>Show more</button>
+            <motion.button>Show more</motion.button>
           </a>
         </Box>
-        <Number>01</Number>
+        <Hide>
+          <Number
+          >
+            01
+          </Number>
+        </Hide>
       </StyledDiv>
     </>
   );
 };
 const StyledDiv = styled.div`
+  scroll-snap-align: start;
   position: relative;
   height: 100vh;
   width: 100%;
@@ -33,8 +49,7 @@ const StyledDiv = styled.div`
     top: 20%;
   }
 `;
-const Box = styled.div`
-  z-index: 105;
+const Box = styled(motion.div)`
   position: absolute;
   top: 30%;
   left: 16%;
@@ -64,28 +79,29 @@ const Box = styled.div`
     }
   }
 `;
-const Line1 = styled.div`
+const Line1 = styled(motion.div)`
   height: 6px;
-  width: 150px;
   border-radius: 10px;
   background-color: #009dcb;
   margin-bottom: 3vh;
 `;
-const Line2 = styled.div`
+const Line2 = styled(motion.div)`
   height: 6px;
-  width: 150px;
   background-color: #009dcb;
   border-radius: 10px;
   margin-bottom: 4vh;
   margin-left: 150px;
 `;
-const Number = styled.h1`
+const Number = styled(motion.h1)`
   font-weight: 500;
   font-size: 30vh;
   position: absolute;
   bottom: 0%;
   right: 3%;
   color: white;
+`;
+const Hide = styled.div`
+  overflow: hidden;
 `;
 
 export default Page2;

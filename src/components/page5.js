@@ -1,17 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 import img from "../images/cssweb.jpg";
+import {motion} from "framer-motion"
+import {useScroll} from "./useScroll"
+import {fade,titleAnim,lineAnim} from "../animation"
 const Page5 = () => {
+  const [element, controls] = useScroll();
   return (
     <>
       <StyledDiv>
         <img src={img} alt="" />
-        <Box>
-          <h1>CS Society</h1>
-          <h3>Official Website of CSE,NITS</h3>
-          <Line1></Line1>
-          <Line2></Line2>
-          <a href="/CSS"><button>Show more</button></a>
+        <Box
+        variants={fade}
+        ref={element}
+       animate={controls}
+       initial="hidden">
+        <Hide><motion.h1 variants={titleAnim}>CSE Soc.</motion.h1></Hide>
+          <Hide><motion.h3 variants={titleAnim}>Official Website of CSE,NITS.</motion.h3></Hide>
+          <Line1 variants={lineAnim}></Line1>
+          <Line2 variants={lineAnim}></Line2>
+          <a href="/CSS"><motion.button>Show more</motion.button></a>
         </Box>
         <Number>04</Number>
       </StyledDiv>
@@ -19,6 +27,7 @@ const Page5 = () => {
   );
 };
 const StyledDiv = styled.div`
+  scroll-snap-align: start;
   position: relative;
   height: 100vh;
   width: 100%;
@@ -31,8 +40,7 @@ const StyledDiv = styled.div`
     top: 20%;
   }
 `;
-const Box = styled.div`
-  z-index: 998;
+const Box = styled(motion.div)`
   position: absolute;
   top: 30%;
   left: 16%;
@@ -62,16 +70,14 @@ const Box = styled.div`
     }
   }
 `;
-const Line1 = styled.div`
+const Line1 = styled(motion.div)`
   height: 6px;
-  width: 150px;
   border-radius: 10px;
   background-color: #009dcb;
   margin-bottom: 3vh;
 `;
-const Line2 = styled.div`
+const Line2 = styled(motion.div)`
   height: 6px;
-  width: 150px;
   background-color: #009dcb;
   border-radius: 10px;
   margin-bottom: 4vh;
@@ -85,5 +91,7 @@ font-weight:500;
   right: 3%;
   color: white;
 `;
-
+const Hide = styled.div`
+overflow: hidden;
+`;
 export default Page5;
