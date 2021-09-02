@@ -89,7 +89,7 @@ const Project1 = () => {
 const StyledDescription = styled.div`
   height: 30vh;
   h3 {
-    color: #828c96;
+    color: #2164CF;
     font-weight: 100;
     padding: 0 40px;
     text-align: justify;
@@ -119,7 +119,7 @@ const StyledAchievements = styled.div`
   height: 30vh;
   padding-top: 5vh;
   h3 {
-    color: #828c96;
+    color: #2164CF;
     font-weight: 100;
     padding: 0 40px;
     text-align: justify;

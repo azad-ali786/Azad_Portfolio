@@ -3,30 +3,30 @@ import styled from "styled-components";
 import img from "../images/sorting.jpg";
 import {motion} from "framer-motion"
 import {useScroll} from "./useScroll"
-import {fade,titleAnim,lineAnim} from "../animation"
+import { fade, titleAnim, lineAnim, imgAnim, imgAnim2,imgAnim1} from "../animation";
 const Page4 = () => {
   const [element, controls] = useScroll();
   return (
     <>
-      <StyledDiv>
-        <img src={img} alt="" />
-        <Box
-        variants={fade}
-        ref={element}
-       animate={controls}
-       initial="hidden">
+      <StyledDiv ref={element} animate={controls} initial="hidden">
+        <ImgBg variants={imgAnim}></ImgBg>
+        <ImgBg1 variants={imgAnim1}></ImgBg1>
+        <motion.img src={img} alt="Sort Vis" variants={imgAnim2}/>
+        <Box variants={fade}>
          <Hide><motion.h1 variants={titleAnim}>Sort Vis.</motion.h1></Hide>
           <Hide><motion.h3 variants={titleAnim}>Visualise sorting algorithms.</motion.h3></Hide>
           <Line1 variants={lineAnim}></Line1>
           <Line2 variants={lineAnim}></Line2>
           <a href="/SortingVisualizer"><motion.button>Show more</motion.button></a>
         </Box>
-        <Number>03</Number>
+        <Number
+          variants={titleAnim}>03</Number>
       </StyledDiv>
     </>
   );
 };
-const StyledDiv = styled.div`
+const StyledDiv = styled(motion.div)`
+  overflow: hidden;
   scroll-snap-align: start;
   position: relative;
   height: 100vh;
@@ -40,6 +40,26 @@ const StyledDiv = styled.div`
     top: 20%;
   }
 `;
+const ImgBg = styled(motion.div)`{
+  height: 65vh;
+  width: 50vw;
+  border-radius: 16px;
+  position: absolute;
+  right: 12%;
+  top: 20%;
+  background:#009dcb;
+  z-index: -2;
+}`;
+const ImgBg1 = styled(motion.div)`{
+  height: 65vh;
+  width: 50vw;
+  border-radius: 16px;
+  position: absolute;
+  right: 12%;
+  top: 20%;
+  background:#ff4d5a;
+  z-index: -1;
+}`;
 const Box = styled(motion.div)`
   position: absolute;
   top: 30%;
