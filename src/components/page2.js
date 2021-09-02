@@ -3,14 +3,16 @@ import styled from "styled-components";
 import img from "../images/vaccine.jpg";
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
-import { fade, titleAnim, lineAnim } from "../animation";
+import { fade, titleAnim, lineAnim, imgAnim, imgAnim2,imgAnim1} from "../animation";
 const Page2 = () => {
   const [element, controls] = useScroll();
   return (
     <>
-      <StyledDiv>
-        <img src={img} alt="vaccine" />
-        <Box variants={fade} ref={element} animate={controls} initial="hidden">
+      <StyledDiv ref={element} animate={controls} initial="hidden">
+        <ImgBg variants={imgAnim}></ImgBg>
+        <ImgBg1 variants={imgAnim1}></ImgBg1>
+        <motion.img src={img} alt="vaccine" variants={imgAnim2}/>
+        <Box variants={fade}>
           <Hide>
             <motion.h1 variants={titleAnim}>CovInfo.</motion.h1>
           </Hide>
@@ -25,17 +27,16 @@ const Page2 = () => {
             <motion.button>Show more</motion.button>
           </a>
         </Box>
-        <Hide>
           <Number
-          >
+          variants={titleAnim}>
             01
           </Number>
-        </Hide>
       </StyledDiv>
     </>
   );
 };
-const StyledDiv = styled.div`
+const StyledDiv = styled(motion.div)`
+  overflow: hidden;
   scroll-snap-align: start;
   position: relative;
   height: 100vh;
@@ -79,6 +80,26 @@ const Box = styled(motion.div)`
     }
   }
 `;
+const ImgBg = styled(motion.div)`{
+  height: 65vh;
+  width: 50vw;
+  border-radius: 16px;
+  position: absolute;
+  right: 12%;
+  top: 20%;
+  background:#009dcb;
+  z-index: -2;
+}`;
+const ImgBg1 = styled(motion.div)`{
+  height: 65vh;
+  width: 50vw;
+  border-radius: 16px;
+  position: absolute;
+  right: 12%;
+  top: 20%;
+  background:#ff4d5a;
+  z-index: -1;
+}`;
 const Line1 = styled(motion.div)`
   height: 6px;
   border-radius: 10px;
