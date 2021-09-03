@@ -69,7 +69,7 @@ const StyledDescription = styled.div`
   height: 30vh;
   h3 {
     color: #828c96;
-    font-weight: lighter;
+    font-weight: 400;
     padding: 0 40px;
     text-align: justify;
     line-height: 1.75;

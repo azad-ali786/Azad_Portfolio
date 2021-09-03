@@ -90,7 +90,7 @@ const StyledDescription = styled.div`
   height: 30vh;
   h3 {
     color: #2164CF;
-    font-weight: 100;
+    font-weight: 400;
     padding: 0 40px;
     text-align: justify;
     line-height: 1.75;
@@ -120,7 +120,7 @@ const StyledAchievements = styled.div`
   padding-top: 5vh;
   h3 {
     color: #2164CF;
-    font-weight: 100;
+    font-weight: 400;
     padding: 0 40px;
     text-align: justify;
     line-height: 1.75;
