@@ -25,71 +25,87 @@ const Page3 = () => {
     </>
   );
 };
-const StyledDiv =  styled(motion.div)`
-overflow: hidden;
-scroll-snap-align: start;
+const StyledDiv = styled(motion.div)`
+  overflow: hidden;
+  scroll-snap-align: start;
   position: relative;
   height: 100vh;
   width: 100%;
   img {
     height: 65vh;
-    width:50vw;
     border-radius: 16px;
     position: absolute;
     right: 12%;
     top: 20%;
+    @media only screen and (max-width: 600px) {
+       height: 50vh;
+       right: 21%;
+       top: 14%
+    }
+  }
+`;
+const Box = styled(motion.div)`
+  position: absolute;
+  top: 30%;
+  left: 16%;
+  @media only screen and (max-width: 600px) {
+    left: 16%;
+    top: 63%
+ }
+  h1 {
+    font-weight: 600;
+    font-size: clamp(4rem,15vw,9rem);
+    color: #e1dede;
+    opacity: 73%;
+  }
+  h3 {
+    font-weight: 200;
+    font-size: clamp(1rem,5vw,2.4rem);
+    color: #9e9b9b;
+    padding-bottom: 4vh;
+  }
+  button {
+    color: white;
+    font-size: clamp(0.5rem,3vw,1.25rem);
+    background: transparent;
+    border: solid white 1px;
+    padding: 1.5vh;
+    margin-left: 65px;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      padding: 1.7vh;
+    }
   }
 `;
 const ImgBg = styled(motion.div)`{
   height: 65vh;
-  width: 50vw;
   border-radius: 16px;
   position: absolute;
   right: 12%;
   top: 20%;
   background:#009dcb;
   z-index: -2;
+  @media only screen and (max-width: 600px) {
+    height: 50vh;
+    right: 31%;
+    top: 12%
+ }
 }`;
 const ImgBg1 = styled(motion.div)`{
   height: 65vh;
-  width: 50vw;
   border-radius: 16px;
   position: absolute;
   right: 12%;
   top: 20%;
   background:#ff4d5a;
   z-index: -1;
+  @media only screen and (max-width: 600px) {
+    height: 50vh;
+    right: 31%;
+    top: 12%
+ }
 }`;
-const Box = styled(motion.div)`
-  position: absolute;
-  top: 30%;
-  left: 16%;
-  h1 {
-    font-weight:600;
-    font-size: 20vh;
-    color: #e1dede;
-    opacity: 73%;
-  }
-  h3 {
-    font-weight:200;
-    font-size: 5vh;
-    color: #9e9b9b;
-    padding-bottom: 4vh;
-  }
-  button {
-    color:white;
-    font-size: 3vh;
-    background: transparent;
-    border: solid white 1px;
-    padding: 1.5vh;
-    margin-left: 65px;
-    cursor:pointer;
-    transition:0.5s;
-    &:hover {
-      padding: 1.7vh;
-    }
-  }
-`;
 const Line1 = styled(motion.div)`
   height: 6px;
   border-radius: 10px;
@@ -104,14 +120,19 @@ const Line2 = styled(motion.div)`
   margin-left: 150px;
 `;
 const Number = styled(motion.h1)`
-  font-weight:500;
-  font-size: 30vh;
+  font-weight: 500;
+  font-size: 12vw;
   position: absolute;
   bottom: 0%;
   right: 3%;
   color: white;
+  @media only screen and (max-width: 600px) {
+    bottom: 8%;
+    right: 6%;
+ }
 `;
 const Hide = styled.div`
-overflow: hidden;
+  overflow: hidden;
 `;
+
 export default Page3;

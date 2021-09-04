@@ -116,21 +116,25 @@ const Line2 = styled(motion.div)`
   bottom: 0;
 `;
 const NavItem = styled.ul`
+   overflow: hidden;
     font-weight: bolder;
     list-style: none;
     position: absolute;
     ${({ active }) =>
       !active &&
       `
-    top: 70% !important;
+    top: 80% !important;
   `}
     top:20%;
     left: 30%;
+    @media only screen and (max-width: 600px) {
+      left: 15%;
+    }
     a {
       color: white;
       transition: 0.5s;
       cursor: pointer;
-      font-size: 8vh;
+      font-size: clamp(2rem,7vw,3.5rem);
       line-height: 1.75;
     }
     li {

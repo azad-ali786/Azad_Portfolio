@@ -23,6 +23,7 @@ const Page1 = () => {
 };
 const BackgroundView = styled(motion.div)`
 background-image: url(${img});
+object-fit: cover;
 scroll-snap-align: start;
  background-repeat: no-repeat;
  background-attachment: fixed;
@@ -38,22 +39,30 @@ const StyledDiv = styled(motion.div)`
   justify-content: space-between;
   div{
     z-index: 998;
+    @media only screen and (max-width: 600px) {
+      z-index: 1;
+    }
   }
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    text-align: center;
+    height: 40vh;
+  } 
   
 `;
 const StyledH1 = styled(motion.h1)`
-  font-size: 12vh;
+  font-size: clamp(2rem,9vw,5rem);
   font-weight: 500;
   color: white;
 `;
 const StyledH2 = styled(motion.h2)`
-  font-size: 3.2vh;
+  font-size: clamp(1rem, 2.5vw, 1.43rem);
   font-weight: 100;
   color: white;
   opacity: 0.83;
 `;
 const StyledP = styled(motion.h1)`
-  font-size: 12vh;
+  font-size: clamp(2rem,9vw,5rem);
   font-weight: 500;
   color: white;
   opacity: 0.83;
