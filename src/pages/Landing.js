@@ -11,7 +11,7 @@ const Landing = () => {
   return (
     <>
       <Slider
-        animate={{ y: -800, transition: { ease: "easeOut", duration: 1.75 } }}
+        animate={{ y: -1400, transition: { ease: "easeOut", duration: 2 } }}
       ></Slider>
      <Page1 />
       <Page2 />

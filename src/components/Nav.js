@@ -76,6 +76,10 @@ const StyledNav = styled.nav`
     margin-left: 13px;
     height: 27px;
     width: 100px;
+    @media only screen and (max-width: 600px) {
+      width: 80px;
+      height: 20px;
+   }
   }
 `;
 const StyledDiv1 = styled.div`
@@ -86,6 +90,9 @@ const StyledDiv1 = styled.div`
   img {
     width: 27px;
     transition: 0.2s;
+    @media only screen and (max-width: 600px) {
+      width: 20px;
+   }
     &:hover {
       transform: scale(1.25);
     }
@@ -97,9 +104,12 @@ const StyledDiv2 = styled.div`
   display: flex;
   height: 20px;
   justify-content: space-between;
-  margin-left: 2vw;
+  margin-left: 1vw;
   margin-top: 2px;
   width: 55px;
+  @media only screen and (max-width: 600px) {
+    margin-left: 4vw;
+ }
 `;
 const Line1 = styled(motion.div)`
   background: white;
@@ -107,6 +117,10 @@ const Line1 = styled(motion.div)`
   width: 40px;
   position: absolute;
   top: 0;
+  @media only screen and (max-width: 600px) {
+    height: 2px;
+  width: 30px;
+ }
 `;
 const Line2 = styled(motion.div)`
   background: white;
@@ -114,6 +128,10 @@ const Line2 = styled(motion.div)`
   width: 40px;
   position: absolute;
   bottom: 0;
+  @media only screen and (max-width: 600px) {
+    height: 2px;
+  width: 30px;
+ }
 `;
 const NavItem = styled.ul`
    overflow: hidden;
@@ -123,7 +141,7 @@ const NavItem = styled.ul`
     ${({ active }) =>
       !active &&
       `
-    top: 80% !important;
+    top: 100% !important;
   `}
     top:20%;
     left: 30%;
