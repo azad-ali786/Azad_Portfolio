@@ -1,7 +1,8 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import {motion} from "framer-motion";
 import { fade } from "../animation";
 import img from "../images/vaccine.jpg";
+import imgMob from "../images/mob_vaccine.jpg";
 import styled from "styled-components";
 import html from "../images/html.svg";
 import css from "../images/css.svg";
@@ -12,10 +13,18 @@ import mongo from "../images/mongodb.svg";
 import git from "../images/git.svg";
 import node from "../images/node.svg";
 const Project1 = () => {
+  const [width, setWidth]   = useState(window.innerWidth);
+  const updateDimensions = () => {
+      setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+      window.addEventListener("resize", updateDimensions);
+      return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
   return (
     <>
       <StyledDiv>
-        <motion.img src={img} alt="Vaccine" 
+        <motion.img src={width>600?img : imgMob} alt="Vaccine" 
         variants={fade}
         initial="hidden"
         animate="show"

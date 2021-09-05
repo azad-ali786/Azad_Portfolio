@@ -1,17 +1,26 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import styled from "styled-components";
 import img from "../images/pic4.png";
+import imgMob from "../images/mob_pic4.jpg";
 import {motion} from "framer-motion"
 import {useScroll} from "./useScroll"
 import { fade, titleAnim, lineAnim, imgAnim, imgAnim2,imgAnim1} from "../animation";
 const Page6 = () => {
+  const [width, setWidth]   = useState(window.innerWidth);
+  const updateDimensions = () => {
+      setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+      window.addEventListener("resize", updateDimensions);
+      return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
   const [element, controls] = useScroll();
   return (
     <>
       <StyledDiv ref={element} animate={controls} initial="hidden">
         <ImgBg variants={imgAnim}></ImgBg>
         <ImgBg1 variants={imgAnim1}></ImgBg1>
-        <motion.img src={img} alt="about" variants={imgAnim2}/>
+        <motion.img src={width>600?img : imgMob} alt="about" variants={imgAnim2}/>
         <Box variants={fade}>
         <Hide><motion.h1 variants={titleAnim}>About.</motion.h1></Hide>
           <Hide><motion.h3 variants={titleAnim}>I love to explore my imagination.</motion.h3></Hide>

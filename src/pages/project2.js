@@ -1,15 +1,24 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import { motion } from "framer-motion";
 import {fade} from "../animation"
 import img from "../images/p1.png";
+import imgMob from "../images/mob_p1.jpg";
 import styled from "styled-components";
 import flutter from "../images/flutter.svg";
 import firebase from "../images/firebase.svg";
 const Project2 = () => {
+  const [width, setWidth]   = useState(window.innerWidth);
+  const updateDimensions = () => {
+      setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+      window.addEventListener("resize", updateDimensions);
+      return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
   return (
     <>
       <StyledDiv>
-        <motion.img src={img} alt=""
+        <motion.img src={width>600?img : imgMob} alt=""
         variants={fade}
         initial="hidden"
         animate="show"

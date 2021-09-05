@@ -1,17 +1,26 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import styled from "styled-components";
 import img from "../images/vaccine.jpg";
+import imgMob from "../images/mob_vaccine.jpg";
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { fade, titleAnim, lineAnim, imgAnim, imgAnim2,imgAnim1} from "../animation";
 const Page2 = () => {
+  const [width, setWidth]   = useState(window.innerWidth);
+  const updateDimensions = () => {
+      setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+      window.addEventListener("resize", updateDimensions);
+      return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
   const [element, controls] = useScroll();
   return (
     <>
       <StyledDiv ref={element} animate={controls} initial="hidden">
         <ImgBg variants={imgAnim}></ImgBg>
         <ImgBg1 variants={imgAnim1}></ImgBg1>
-        <motion.img src={img} alt="vaccine" variants={imgAnim2}/>
+        <motion.img src={width>600?img : imgMob} alt="vaccine" variants={imgAnim2}/>
         <Box variants={fade}>
           <Hide>
             <motion.h1 variants={titleAnim}>CovInfo.</motion.h1>
