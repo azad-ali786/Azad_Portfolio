@@ -45,7 +45,7 @@ const StyledDiv = styled(motion.div)`
     right: 12%;
     top: 20%;
     @media only screen and (max-width: 600px) {
-       height: 45vh;
+       height: 50vh;
        right: 21%;
        top: 15%
     }
@@ -57,11 +57,11 @@ const Box = styled(motion.div)`
   left: 16%;
   @media only screen and (max-width: 600px) {
     left: 16%;
-    top: 60%
+    top: 65%
  }
   h1 {
     font-weight: 600;
-    font-size: clamp(4rem,15vw,9rem);
+    font-size: clamp(1rem,15vw,9rem);
     color: #e1dede;
     opacity: 73%;
   }
@@ -94,9 +94,9 @@ const ImgBg = styled(motion.div)`{
   background:#009dcb;
   z-index: -2;
   @media only screen and (max-width: 600px) {
-    height: 45vh;
+    height: 50vh;
     right: 31%;
-    top: 14%
+    top: 13%
  }
 }`;
 const ImgBg1 = styled(motion.div)`{
@@ -108,9 +108,9 @@ const ImgBg1 = styled(motion.div)`{
   background:#ff4d5a;
   z-index: -1;
   @media only screen and (max-width: 600px) {
-    height: 45vh;
+    height: 50vh;
     right: 31%;
-    top: 14%
+    top: 13%
  }
 }`;
 const Line1 = styled(motion.div)`
@@ -136,5 +136,6 @@ const Line2 = styled(motion.div)`
 const Hide = styled.div`
   overflow: hidden;
 `;
+
 
 export default Page6;
