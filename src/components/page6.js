@@ -36,9 +36,9 @@ const StyledDiv = styled(motion.div)`
     right: 12%;
     top: 20%;
     @media only screen and (max-width: 600px) {
-       height: 50vh;
+       height: 45vh;
        right: 21%;
-       top: 14%
+       top: 15%
     }
   }
 `;
@@ -48,7 +48,7 @@ const Box = styled(motion.div)`
   left: 16%;
   @media only screen and (max-width: 600px) {
     left: 16%;
-    top: 63%
+    top: 60%
  }
   h1 {
     font-weight: 600;
@@ -58,7 +58,7 @@ const Box = styled(motion.div)`
   }
   h3 {
     font-weight: 200;
-    font-size: clamp(1rem,4.2vw,2.2rem);
+    font-size: clamp(1rem,5vw,2.4rem);
     color: #9e9b9b;
     padding-bottom: 4vh;
   }
@@ -68,7 +68,7 @@ const Box = styled(motion.div)`
     background: transparent;
     border: solid white 1px;
     padding: 1.5vh;
-    margin-left: 65px;
+    margin-left: 85px;
     cursor: pointer;
     transition: 0.5s;
     &:hover {
@@ -85,9 +85,9 @@ const ImgBg = styled(motion.div)`{
   background:#009dcb;
   z-index: -2;
   @media only screen and (max-width: 600px) {
-    height: 50vh;
+    height: 45vh;
     right: 31%;
-    top: 12%
+    top: 14%
  }
 }`;
 const ImgBg1 = styled(motion.div)`{
@@ -99,9 +99,9 @@ const ImgBg1 = styled(motion.div)`{
   background:#ff4d5a;
   z-index: -1;
   @media only screen and (max-width: 600px) {
-    height: 50vh;
+    height: 45vh;
     right: 31%;
-    top: 12%
+    top: 14%
  }
 }`;
 const Line1 = styled(motion.div)`
@@ -109,6 +109,9 @@ const Line1 = styled(motion.div)`
   border-radius: 10px;
   background-color: #009dcb;
   margin-bottom: 3vh;
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 1vh;
+ }
 `;
 const Line2 = styled(motion.div)`
   height: 6px;
@@ -116,6 +119,10 @@ const Line2 = styled(motion.div)`
   border-radius: 10px;
   margin-bottom: 4vh;
   margin-left: 150px;
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 2vh;
+    margin-left: 100px;
+ }
 `;
 const Hide = styled.div`
   overflow: hidden;
