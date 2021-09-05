@@ -6,17 +6,6 @@ export const fade = {
     staggerChildren: 0.25 },
   },
 };
-export const scaleFade = {
-  hidden: { height: "65vh", width: "50%",
- opacity: 0,
-},
-  show: {
-    height: "100vh",
-    width: "64%",
-    opacity: 1,
-    transition: { duration: 1.25, ease: "easeOut" },
-  },
-};
 export const titleAnim = {
   hidden: { y: 250 },
   show: {
