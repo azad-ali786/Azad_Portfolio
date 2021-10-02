@@ -1,3 +1,5 @@
-#In progress, please wait till its completed
 
-# My Portfolio
+# Azad Ali Portfolio
+
+A react based web-app using framer-motion and styled components.
+
